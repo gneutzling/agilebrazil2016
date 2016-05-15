@@ -1,0 +1,44 @@
+/**
+ * Theme based styles
+ */
+
+@each $theme-name, $theme in $color-themes
+  %theme-#{$theme-name}
+    background-color: map-get($theme, color-background)
+    color: map-get($theme, color-text)
+
+    a
+      color: map-get($theme, color-link)
+
+    h1
+      color: map-get($theme, color-title)
+
+    h2
+      color: map-get($theme, color-subtitle)
+
+    h3
+      color: map-get($theme, color-link)
+
+    h4
+      color: map-get($theme, color-text)
+
+    .cta-button
+      background-color: map-get($theme, color-cta-background)
+      color: map-get($theme, color-cta-text)
+
+
+    /*
+     * Special selectors must be alone.
+     */
+
+    ::-webkit-input-placeholder
+      color: map-get($theme, color-text)
+
+    :-moz-placeholder
+      color: map-get($theme, color-text)
+
+    ::-moz-placeholder
+      color: map-get($theme, color-text)
+
+    :-ms-input-placeholder
+      color: map-get($theme, color-text)
