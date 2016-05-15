@@ -1,0 +1,49 @@
+/**
+ * library/settings/colors.sass.
+ */
+
+/**
+ * Descriptive colors from guideline.
+ */
+
+$color-pacific-blue: #00a1c7;
+$color-kaitoke-green: #003c18;
+$color-fun-green: #008e39;
+$color-gorse: #fef64f;
+$color-gin-fizz: #fff9e1;
+
+
+/**
+ * Functional color variables.
+ */
+
+$color-title: black;
+$color-text: black;
+
+
+
+/**
+ * Themes
+ */
+
+$color-themes: (
+  light: (
+    color-title: $color-kaitoke-green,
+    color-subtitle: black,
+    color-text: black,
+    color-link: $color-pacific-blue,
+    color-background: $color-gin-fizz,
+    color-cta-text: white,
+    color-cta-background: $color-fun-green
+  ),
+
+  dark: (
+    color-title: white,
+    color-subtitle: white,
+    color-text: white,
+    color-link: $color-gorse,
+    color-background: $color-fun-green,
+    color-cta-text: black,
+    color-cta-background: $color-gorse
+  )
+);
