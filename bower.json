@@ -1,0 +1,23 @@
+{
+  "name": "agilebrazil2016",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Gabriel Neutzling"
+  ],
+  "license": "GPL-2.0",
+  "homepage": "https://github.com/gneutzling/agilebrazil2016",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "reset-css": "^2.0.2011012603",
+    "compass-breakpoint": "~2.6.1",
+    "bootstrap-sass": "~3.3.5"
+  }
+}
