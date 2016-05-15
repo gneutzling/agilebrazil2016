@@ -1,0 +1,11 @@
+/**
+ * partials/custom-fonts.sass
+ */
+
+@font-face {
+  font-family: 'league_spartanregular';
+  src: url('../fonts/leaguespartan.woff2') format('woff2'),
+       url('../fonts/leaguespartan.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
