@@ -5,4 +5,4 @@ bower_components
 
 src/assets/lib
 src/assets/css/*.css
-src/assets/js/build/*.js
+src/assets/js/bundle.js
