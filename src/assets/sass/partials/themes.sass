@@ -23,8 +23,12 @@
       color: map-get($theme, color-text)
 
     .cta-button
+      @extend %button-cta
       background-color: map-get($theme, color-cta-background)
       color: map-get($theme, color-cta-text)
+
+      &:hover
+        background-color: darken(map-get($theme, color-cta-background), 8%)
 
 
     /*
