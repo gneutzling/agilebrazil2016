@@ -11,6 +11,22 @@
   @extend %theme-dark
 
 
+.cta-button-wrapper
+  padding: 50px 0
+  text-align: center
+
+.section
+  padding: 60px 0
+
+  .intro
+    @extend %row
+
+  .intro-full
+    @extend %col-md-24
+
+  .intro-half
+    @extend %col-md-12
+
 
 #teaser
   @extend %theme-dark
@@ -32,7 +48,6 @@
 
 
 #subscription
-  padding: 60px 0
   background: #006c84
 
   h1
@@ -40,3 +55,118 @@
     margin: 0 auto
     text-align: center
     color: $color-gorse
+
+
+#path
+  padding-bottom: 0
+  background: #003441
+  color: #fff9e1
+
+  .container
+    padding-bottom: 60px
+    background: url(../img/bg_tree.png) no-repeat 100% 105%
+
+
+  h1
+    margin-bottom: 1em
+    text-transform: uppercase
+    color: white
+
+  h3
+    margin: 1.5em 0
+    color: $color-gorse
+
+  .cta-button
+    @extend %button-cta
+    background-color: #006c84
+    color: #d9edf7
+
+    &:hover
+      background-color: darken(#006c84, 8%)
+
+
+.path-list
+  font-size: 20px
+
+  dt
+    font-weight: 700
+    color: #00a1c7
+
+  dd
+    margin-bottom: 1em
+
+
+#sessions
+  @extend %theme-dark
+
+  h1
+    margin-bottom: 2em
+    text-transform: uppercase
+
+
+.session-list
+  li
+    margin-bottom: 3em
+
+  img
+    padding: 0 10%
+    margin: 0 auto
+    border-radius: 100%
+
+
+.session-list--normal
+  li
+    @extend %col-md-12
+
+  .session-banner
+    @extend %col-md-8
+
+  .session-details
+    @extend %col-md-16
+
+
+.session-list--intercalary
+  li
+    @extend %row
+
+    &:nth-child(even)
+      .session-banner
+        float: right
+
+  .session-banner
+    @extend %col-md-8
+
+  .session-details
+    @extend %col-md-16
+
+
+
+
+#audience
+  color: #fff9e1
+  background: #00a1c7
+
+  h1
+    text-transform: uppercase
+
+  h4
+    text-align: center
+
+  .intro-full
+    margin: 1em 0 3em
+
+  .session-list
+    h2
+      font-size: 22px
+      color: $color-gorse
+
+    p
+      font-size: 14px
+
+  .cta-button
+    @extend %button-cta
+    background-color: $color-gorse
+    color: black
+
+    &:hover
+      background-color: darken($color-gorse, 8%)
