@@ -134,16 +134,16 @@ table {
   .container-fluid:after {
     clear: both; }
 
-.row, .section .intro, .session-list--intercalary li {
+.row, .section .intro, footer .intro, .session-list--intercalary li, #newsletter .info {
   margin-left: -15px;
   margin-right: -15px; }
-  .row:before, .section .intro:before, .session-list--intercalary li:before, .row:after, .section .intro:after, .session-list--intercalary li:after {
+  .row:before, .section .intro:before, footer .intro:before, .session-list--intercalary li:before, #newsletter .info:before, .row:after, .section .intro:after, footer .intro:after, .session-list--intercalary li:after, #newsletter .info:after {
     content: " ";
     display: table; }
-  .row:after, .section .intro:after, .session-list--intercalary li:after {
+  .row:after, .section .intro:after, footer .intro:after, .session-list--intercalary li:after, #newsletter .info:after {
     clear: both; }
 
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .section .intro-half, .session-list--normal li, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24, .section .intro-full, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17, .col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24 {
+.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12, .col-xs-13, .col-xs-14, .col-xs-15, .col-xs-16, .col-xs-17, .col-xs-18, .col-xs-19, .col-xs-20, .col-xs-21, .col-xs-22, .col-xs-23, .col-xs-24, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-13, .col-sm-14, .col-sm-15, .col-sm-16, .col-sm-17, .col-sm-18, .col-sm-19, .col-sm-20, .col-sm-21, .col-sm-22, .col-sm-23, .col-sm-24, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner, #newsletter .form, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .section .intro-half, footer .intro-half, .session-list--normal li, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details, #newsletter .text, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24, .section .intro-full, footer .intro-full, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-13, .col-lg-14, .col-lg-15, .col-lg-16, .col-lg-17, .col-lg-18, .col-lg-19, .col-lg-20, .col-lg-21, .col-lg-22, .col-lg-23, .col-lg-24 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
@@ -254,7 +254,7 @@ table {
     width: 100%; } }
 
 @media (min-width: 750px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .section .intro-half, .session-list--normal li, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24, .section .intro-full, .col-md {
+  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner, #newsletter .form, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .section .intro-half, footer .intro-half, .session-list--normal li, .col-md-13, .col-md-14, .col-md-15, .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details, #newsletter .text, .col-md-17, .col-md-18, .col-md-19, .col-md-20, .col-md-21, .col-md-22, .col-md-23, .col-md-24, .section .intro-full, footer .intro-full, .col-md {
     float: left; }
   .col-md-1 {
     width: 4.16667%; }
@@ -270,7 +270,7 @@ table {
     width: 25%; }
   .col-md-7 {
     width: 29.16667%; }
-  .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner {
+  .col-md-8, .session-list--normal .session-banner, .session-list--intercalary .session-banner, #newsletter .form {
     width: 33.33333%; }
   .col-md-9 {
     width: 37.5%; }
@@ -278,7 +278,7 @@ table {
     width: 41.66667%; }
   .col-md-11 {
     width: 45.83333%; }
-  .col-md-12, .section .intro-half, .session-list--normal li {
+  .col-md-12, .section .intro-half, footer .intro-half, .session-list--normal li {
     width: 50%; }
   .col-md-13 {
     width: 54.16667%; }
@@ -286,7 +286,7 @@ table {
     width: 58.33333%; }
   .col-md-15 {
     width: 62.5%; }
-  .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details {
+  .col-md-16, .session-list--normal .session-details, .session-list--intercalary .session-details, #newsletter .text {
     width: 66.66667%; }
   .col-md-17 {
     width: 70.83333%; }
@@ -302,7 +302,7 @@ table {
     width: 91.66667%; }
   .col-md-23 {
     width: 95.83333%; }
-  .col-md-24, .section .intro-full {
+  .col-md-24, .section .intro-full, footer .intro-full {
     width: 100%; } }
 
 @media (min-width: 1170px) {
@@ -826,7 +826,7 @@ table {
 /**
  * library/settings/buttons.sass.
  */
-.light .cta-button, .dark .cta-button, #teaser .cta-button, #sessions .cta-button, #path .cta-button, #audience .cta-button {
+.light .cta-button, .dark .cta-button, #teaser .cta-button, #sessions .cta-button, #path .cta-button, #audience .cta-button, #be-a-sponsor .cta-button {
   padding: 18px 35px;
   border-radius: 28px;
   text-decoration: none; }
@@ -946,6 +946,13 @@ img {
 main {
   padding-top: 30px; }
 
+input[type="button"] {
+  padding: 0.5em 1.2em;
+  font-size: 16px;
+  line-height: 22px;
+  border: 0;
+  border-radius: 3px; }
+
 /**
  * partials/headings.sass
  */
@@ -981,22 +988,22 @@ h4 {
 /**
  * partials/navigation.sass
  */
-.main-menu {
+.main-menu, .footer-menu {
   float: right;
   padding: 20px 0; }
-  .main-menu ul {
+  .main-menu ul, .footer-menu ul {
     font-size: 0; }
-  .main-menu li {
+  .main-menu li, .footer-menu li {
     display: inline-block;
     vertical-align: middle;
     margin-left: 15px; }
-  .main-menu a {
+  .main-menu a, .footer-menu a {
     font-family: "Montserrat";
     font-size: 16px;
     text-decoration: none;
     text-transform: uppercase;
     color: white; }
-    .main-menu a:hover {
+    .main-menu a:hover, .footer-menu a:hover {
       color: yellow; }
 
 /**
@@ -1034,7 +1041,7 @@ h4 {
   padding: 50px 0;
   text-align: center; }
 
-.section {
+.section, footer {
   padding: 60px 0; }
 
 #teaser {
@@ -1121,6 +1128,50 @@ h4 {
     color: black; }
     #audience .cta-button:hover {
       background-color: #fef426; }
+
+#be-a-sponsor {
+  color: #fff9e1;
+  background-color: #006c84; }
+  #be-a-sponsor h1 {
+    margin-bottom: 1em;
+    text-transform: uppercase; }
+  #be-a-sponsor h4 {
+    text-align: center; }
+  #be-a-sponsor h3 {
+    color: #fef64f;
+    margin-bottom: 1em; }
+  #be-a-sponsor .cta-button {
+    background-color: #fef64f;
+    color: black; }
+    #be-a-sponsor .cta-button:hover {
+      background-color: #fef426; }
+
+#newsletter {
+  color: #fff9e1;
+  background-color: #35a633; }
+  #newsletter h1 {
+    margin-bottom: 1em;
+    text-transform: uppercase; }
+  #newsletter h4 {
+    color: #fef64f;
+    font-size: 18px; }
+  #newsletter input[type="text"], #newsletter input[type="email"] {
+    font-size: 13px;
+    line-height: 18px;
+    padding: 7px;
+    width: 100%;
+    margin: 5px 50px 5px 0;
+    border: 1px solid #dcdedd;
+    border-radius: 3px; }
+  #newsletter input[type="button"] {
+    background-color: #003c18;
+    color: #fff; }
+
+footer {
+  background-color: #003c18; }
+  footer .footer-menu {
+    float: none;
+    text-align: center; }
 
 /**
  * partials/shame.sass
