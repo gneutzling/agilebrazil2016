@@ -15,7 +15,7 @@
   padding: 50px 0
   text-align: center
 
-.section
+.section, footer
   padding: 60px 0
 
   .intro
@@ -170,3 +170,69 @@
 
     &:hover
       background-color: darken($color-gorse, 8%)
+
+
+#be-a-sponsor
+  color: #fff9e1
+  background-color: #006c84
+
+  h1
+    margin-bottom: 1em
+    text-transform: uppercase
+
+  h4
+    text-align: center
+
+  h3
+    color: $color-gorse
+    margin-bottom: 1em
+
+  .cta-button
+    @extend %button-cta
+    background-color: $color-gorse
+    color: black
+
+    &:hover
+      background-color: darken($color-gorse, 8%)
+
+#newsletter
+  color: #fff9e1
+  background-color: #35a633
+
+  h1
+    margin-bottom: 1em
+    text-transform: uppercase
+
+  h4
+    color: $color-gorse
+    font-size: 18px
+
+  .info
+    @extend %row
+
+  .form
+    @extend %col-md-8
+
+  .text
+    @extend %col-md-16
+
+  input[type="text"], input[type="email"]
+    font-size: 13px
+    line-height: 18px
+    padding: 7px
+    width: 100%
+    margin: 5px 50px 5px 0
+    border: 1px solid #dcdedd
+    border-radius: 3px
+
+  input[type="button"]
+    background-color: #003c18
+    color: #fff
+
+
+footer
+  background-color: #003c18
+
+  .footer-menu
+    float: none
+    text-align: center
