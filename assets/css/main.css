@@ -1032,7 +1032,20 @@ h4 {
     height: 80px;
     overflow: hidden;
     border-radius: 15px;
-    background: #d8d8d8; }
+    background: #d8d8d8;
+    opacity: 0.8; }
+  .social-networking .social-icon--twitter {
+    background: url(../img/social-icons/twitter.png) no-repeat center center;
+    background-size: contain; }
+  .social-networking .social-icon--facebook {
+    background: url(../img/social-icons/facebook.png) no-repeat center center;
+    background-size: contain; }
+  .social-networking .social-icon--linkedin {
+    background: url(../img/social-icons/linkedin.png) no-repeat center center;
+    background-size: contain; }
+  .social-networking .social-icon--vimeo {
+    background: url(../img/social-icons/vimeo.png) no-repeat center center;
+    background-size: contain; }
 
 /**
  * partials/sections.sass
