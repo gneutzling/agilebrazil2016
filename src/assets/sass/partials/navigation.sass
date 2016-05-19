@@ -2,24 +2,30 @@
  * partials/navigation.sass
  */
 
+
+
+
 .main-menu, .footer-menu
-  float: right
-  padding: 20px 0
+  display: none
+  +breakpoint(min-width $md-min)
+    display: block
+    float: right
+    padding: 20px 0
 
-  ul
-    font-size: 0
+    ul
+      font-size: 0
 
-  li
-    display: inline-block
-    vertical-align: middle
-    margin-left: 15px
+    li
+      display: inline-block
+      vertical-align: middle
+      margin-left: 15px
 
-  a
-    font-family: $font-base
-    font-size: $font-size
-    text-decoration: none
-    text-transform: uppercase
-    color: white
+    a
+      font-family: $font-base
+      font-size: $font-size
+      text-decoration: none
+      text-transform: uppercase
+      color: white
 
-    &:hover
-      color: yellow
+      &:hover
+        color: yellow

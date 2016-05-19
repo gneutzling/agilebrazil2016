@@ -30,11 +30,18 @@
 
 #teaser
   @extend %theme-dark
-  height: 100vh
-  padding-top: 200px
+  padding-top: 130px
   text-align: center
   background: url(../img/bg_teaser.jpg) no-repeat center
   background-size: cover
+  +breakpoint(min-width $md-min)
+    padding-top: 200px
+
+  h1
+    font-size: 1.6em
+    margin-top: 1em
+    +breakpoint(min-width $md-min)
+      font-size: 2em
 
   h2
     color: #d9edf7
@@ -45,6 +52,7 @@
   .summary
     max-width: 550px
     margin: 0 auto 2.5em
+
     +breakpoint(min-width $md-min)
       margin: 0 auto 5em
 
@@ -206,6 +214,7 @@
 
   h4
     text-align: center
+    margin-top: 2em
 
   h3
     color: $color-gorse
@@ -230,6 +239,7 @@
   h4
     color: $color-gorse
     font-size: 18px
+    margin-top: 2em
 
   .info
     @extend %row
@@ -245,7 +255,7 @@
     line-height: 18px
     padding: 7px
     width: 100%
-    margin: 5px 50px 5px 0
+    margin: 5px 5px 5px 0
     border: 1px solid #dcdedd
     border-radius: 3px
 
