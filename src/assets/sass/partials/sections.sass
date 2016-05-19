@@ -16,7 +16,7 @@
   text-align: center
 
 .section, footer
-  padding: 60px 0
+  padding: 60px 15px
 
   .intro
     @extend %row
@@ -44,7 +44,9 @@
 
   .summary
     max-width: 550px
-    margin: 0 auto 100px
+    margin: 0 auto 2.5em
+    +breakpoint(min-width $md-min)
+      margin: 0 auto 5em
 
 
 #subscription
@@ -64,7 +66,8 @@
 
   .container
     padding-bottom: 60px
-    background: url(../img/bg_tree.png) no-repeat 100% 105%
+    +breakpoint(min-width $md-min)
+      background: url(../img/bg_tree.png) no-repeat 100% 105%
 
 
   h1
@@ -102,6 +105,10 @@
   h1
     margin-bottom: 2em
     text-transform: uppercase
+    text-align: center
+    +breakpoint(min-width $md-min)
+      text-align: left
+
 
 
 .session-list
@@ -112,6 +119,17 @@
     padding: 0 10%
     margin: 0 auto
     border-radius: 100%
+    opacity: 0.5
+
+  .session-banner
+    margin: 20px auto
+    max-width: 300px
+
+
+  .session-details
+    text-align: center
+    +breakpoint(min-width $md-min)
+      text-align: left
 
 
 .session-list--normal
@@ -128,13 +146,19 @@
 .session-list--intercalary
   li
     @extend %row
+    +breakpoint(min-width $md-min)
+      &:nth-child(even)
+        .session-banner
+          float: right
+    +breakpoint(min-width $lg-min)
+      &:nth-child(even)
+        .session-banner
+          margin-right: 5%
 
-    &:nth-child(even)
-      .session-banner
-        float: right
 
   .session-banner
     @extend %col-md-8
+
 
   .session-details
     @extend %col-md-16
