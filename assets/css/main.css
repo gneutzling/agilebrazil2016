@@ -993,22 +993,26 @@ h4 {
  * partials/navigation.sass
  */
 .main-menu, .footer-menu {
-  float: right;
-  padding: 20px 0; }
-  .main-menu ul, .footer-menu ul {
-    font-size: 0; }
-  .main-menu li, .footer-menu li {
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 15px; }
-  .main-menu a, .footer-menu a {
-    font-family: "Montserrat";
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: white; }
-    .main-menu a:hover, .footer-menu a:hover {
-      color: yellow; }
+  display: none; }
+  @media (min-width: 750px) {
+    .main-menu, .footer-menu {
+      display: block;
+      float: right;
+      padding: 20px 0; }
+      .main-menu ul, .footer-menu ul {
+        font-size: 0; }
+      .main-menu li, .footer-menu li {
+        display: inline-block;
+        vertical-align: middle;
+        margin-left: 15px; }
+      .main-menu a, .footer-menu a {
+        font-family: "Montserrat";
+        font-size: 16px;
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white; }
+        .main-menu a:hover, .footer-menu a:hover {
+          color: yellow; } }
 
 /**
  * partials/social.sass
@@ -1062,11 +1066,19 @@ h4 {
   padding: 60px 15px; }
 
 #teaser {
-  height: 100vh;
-  padding-top: 200px;
+  padding-top: 130px;
   text-align: center;
   background: url(../img/bg_teaser.jpg) no-repeat center;
   background-size: cover; }
+  @media (min-width: 750px) {
+    #teaser {
+      padding-top: 200px; } }
+  #teaser h1 {
+    font-size: 1.6em;
+    margin-top: 1em; }
+    @media (min-width: 750px) {
+      #teaser h1 {
+        font-size: 2em; } }
   #teaser h2 {
     color: #d9edf7; }
   #teaser h3 {
@@ -1178,7 +1190,8 @@ h4 {
     margin-bottom: 1em;
     text-transform: uppercase; }
   #be-a-sponsor h4 {
-    text-align: center; }
+    text-align: center;
+    margin-top: 2em; }
   #be-a-sponsor h3 {
     color: #fef64f;
     margin-bottom: 1em; }
@@ -1196,13 +1209,14 @@ h4 {
     text-transform: uppercase; }
   #newsletter h4 {
     color: #fef64f;
-    font-size: 18px; }
+    font-size: 18px;
+    margin-top: 2em; }
   #newsletter input[type="text"], #newsletter input[type="email"] {
     font-size: 13px;
     line-height: 18px;
     padding: 7px;
     width: 100%;
-    margin: 5px 50px 5px 0;
+    margin: 5px 5px 5px 0;
     border: 1px solid #dcdedd;
     border-radius: 3px; }
   #newsletter input[type="button"] {
