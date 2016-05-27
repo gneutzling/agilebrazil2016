@@ -1,0 +1,35 @@
+#location {
+  position: relative;
+}
+
+#location-gmaps {
+  height: 100%;
+  width: 100%;
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 0; /* Set z-index to 0 as it will be on a layer below the contact form */
+}
+
+#location-box {
+  text-align: center;
+  @extend .col-md-8;
+  position: relative;
+  z-index: 1;
+  height: auto;
+  padding: 15px;
+  background: #fff;
+  color: #9B9B9B;
+  img {
+    width: 50%;
+    margin: 0 auto;
+  }
+  h3 {
+    margin-top: 1em;
+    text-transform: uppercase;
+    color: #4A4A4A;
+  }
+  a {
+    color: $color-fun-green;
+  }
+}
